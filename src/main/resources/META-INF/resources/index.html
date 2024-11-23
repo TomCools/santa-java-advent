@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Santas travels - Timefold Solver on Quarkus</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <style>
+    <!-- These CSS lines are just to make the map look a bit darker -->
+
+  .leaflet-tile {
+   filter: grayscale(1) !important;
+  }
+
+  .leaflet-layer,
+  .leaflet-control-zoom-in,
+  .leaflet-control-zoom-out {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(50%);
+  }
+  </style>
+</head>
+<body style="margin: 0; padding: 0">
+<nav>
+  <button id="solveButton" onclick="solve()">Solve</button>
+  <span>Note: If the solution doesn't seem optimal, you might need to increase the spent-limit in the properties.</span>
+</nav>
+<div id="map" style="height: 95vh; width: 100vw;"></div>
+<footer>This demo was created for Java Advent and was purposefully kept simplistic. For more elaborate examples, see <a href="https://github.com/TimefoldAI/timefold-quickstarts">The official Timefold Quickstarts Repository</a></footer>
+<script src="/app-simplified.js"></script>
+</body>
+</html>

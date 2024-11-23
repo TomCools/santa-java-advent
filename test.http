@@ -1,0 +1,115 @@
+POST http://localhost:8080/route-plans/solve
+Content-Type:application/json
+
+{
+  "santa": {
+    "id": "1",
+    "capacity": 15,
+    "homeLocation": [
+      40.605994321126936,
+      -75.68106859680056
+    ],
+    "departureTime": "2024-02-10T07:30:00",
+    "visits": [],
+    "totalDrivingTimeSeconds": 0,
+    "totalDemand": 0,
+    "arrivalTime": "2024-02-10T07:30:00"
+  },
+  "visits": [
+    {
+      "id": "1",
+      "name": "Dan Green",
+      "location": [
+        40.76104493121754,
+        -75.16056341466826
+      ],
+      "demand": 1,
+      "minStartTime": "2024-02-10T13:00:00",
+      "maxEndTime": "2024-02-10T18:00:00",
+      "serviceDuration": 1200.000000000,
+      "vehicle": null,
+      "previousVisit": null,
+      "nextVisit": null,
+      "arrivalTime": null,
+      "startServiceTime": null,
+      "departureTime": null,
+      "drivingTimeSecondsFromPreviousStandstill": null
+    },
+    {
+      "id": "2",
+      "name": "Ivy King",
+      "location": [
+        40.13754381024318,
+        -75.492526629236
+      ],
+      "demand": 1,
+      "minStartTime": "2024-02-10T13:00:00",
+      "maxEndTime": "2024-02-10T18:00:00",
+      "serviceDuration": 1200.000000000,
+      "vehicle": null,
+      "previousVisit": null,
+      "nextVisit": null,
+      "arrivalTime": null,
+      "startServiceTime": null,
+      "departureTime": null,
+      "drivingTimeSecondsFromPreviousStandstill": null
+    },
+    {
+      "id": "3",
+      "name": "Flo Li",
+      "location": [
+        39.87122455090297,
+        -75.64520072015769
+      ],
+      "demand": 2,
+      "minStartTime": "2024-02-10T08:00:00",
+      "maxEndTime": "2024-02-10T12:00:00",
+      "serviceDuration": 600.000000000,
+      "vehicle": null,
+      "previousVisit": null,
+      "nextVisit": null,
+      "arrivalTime": null,
+      "startServiceTime": null,
+      "departureTime": null,
+      "drivingTimeSecondsFromPreviousStandstill": null
+    },
+    {
+      "id": "4",
+      "name": "Flo Cole",
+      "location": [
+        40.46124744193433,
+        -75.18250987609025
+      ],
+      "demand": 1,
+      "minStartTime": "2024-02-10T13:00:00",
+      "maxEndTime": "2024-02-10T18:00:00",
+      "serviceDuration": 2400.000000000,
+      "vehicle": null,
+      "previousVisit": null,
+      "nextVisit": null,
+      "arrivalTime": null,
+      "startServiceTime": null,
+      "departureTime": null,
+      "drivingTimeSecondsFromPreviousStandstill": null
+    },
+    {
+      "id": "5",
+      "name": "Carl Green",
+      "location": [
+        40.61352381171549,
+        -75.83301278355529
+      ],
+      "demand": 1,
+      "minStartTime": "2024-02-10T08:00:00",
+      "maxEndTime": "2024-02-10T12:00:00",
+      "serviceDuration": 1800.000000000,
+      "vehicle": null,
+      "previousVisit": null,
+      "nextVisit": null,
+      "arrivalTime": null,
+      "startServiceTime": null,
+      "departureTime": null,
+      "drivingTimeSecondsFromPreviousStandstill": null
+    }
+  ]
+}
